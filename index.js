@@ -2,7 +2,7 @@ var elasticsearch = require('elasticsearch')
 
 class ElasticsearchLoop {
   constructor () {
-    console.warn('This version is will deprecate soon please migrate to Promise based version. See read me for more information')
+    console.warn('[elasticsearch-loop] This version is will deprecate soon please migrate to Promise based version. See read me for more information')
     this.initConstant()
   }
 
