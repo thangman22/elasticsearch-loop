@@ -46,6 +46,8 @@ var elasticLoop = require("elasticsearch-loop/es");
   const res = await connect.query({
     index: 'main',
     q: 'time:[2016-01-01 TO 2016-12-31]',
+  }, (msg) => {
+    // Incase you want to retrieve every message
   })
   console.log(res)
 })()
